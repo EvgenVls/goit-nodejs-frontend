@@ -8,7 +8,7 @@ export default function MoviesList() {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const { data } = await axios.get(`${VITE_API_URL}/movies/`);
+      const { data } = await axios.get(`${VITE_API_URL}/movies`);
       setMovies(data);
     };
     fetchMovies();
